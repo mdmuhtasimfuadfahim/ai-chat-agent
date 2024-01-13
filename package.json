@@ -1,0 +1,47 @@
+{
+  "name": "langchain-helpdesk-backend",
+  "version": "0.0.1",
+  "description": "A help desk where AI will reply to user queries",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdmuhtasimfuadfahim/helpdesk-backend.git"
+  },
+  "keywords": [
+    "Langchain",
+    "NodeJS",
+    "Fastify",
+    "Embedded DB"
+  ],
+  "author": "mdmuhtasimfuadfahim, mahmudsagar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdmuhtasimfuadfahim/helpdesk-backend/issues"
+  },
+  "homepage": "https://github.com/mdmuhtasimfuadfahim/helpdesk-backend#readme",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.6.2",
+    "@fastify/autoload": "^5.7.1",
+    "@fastify/multipart": "^7.7.0",
+    "@fastify/static": "^6.10.2",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.19.2",
+    "fastify-autoload": "^3.13.0",
+    "fluent-json-schema": "^4.1.0",
+    "hnswlib-node": "^1.4.2",
+    "langchain": "^0.0.153",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.3.2",
+    "pdf-parse": "^1.1.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

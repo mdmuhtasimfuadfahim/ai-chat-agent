@@ -1,0 +1,533 @@
+{
+	"info": {
+		"_postman_id": "1378427d-ed5e-430c-80ba-3707550d6fb7",
+		"name": "Chatbot Addon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25506484"
+	},
+	"item": [
+		{
+			"name": "Options",
+			"item": [
+				{
+					"name": "Update Options",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"instruction\": \"Marketting Manager\",\n    \"goal\": \"Convince the customer to buy ElementsKit Annualy\",\n    \"conversationScopes\": \"ElementsKits PRO benefit for Agency\",\n    \"invalidQueryMgs\": \"Contact team XpeedStudio for better knowledge or email at support@xpeedstudio.com\",\n    \"needAssistanceQueryMgs\": \"Assistance number is +880174486668\",\n    \"siteId\": \"El123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/update-options",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"update-options"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Options",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"siteId\": \"El123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/get-options",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"get-options"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Options",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"siteId\": \"El123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/delete-options",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"delete-options"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Update Site & Service",
+			"item": [
+				{
+					"name": "Update Service",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"siteId\": \"El123\",\n    \"serviceId\": \"El123\",\n    \"tags\": [\"a\", \"b\", \"c\", \"d\"],\n    \"serviceDataText\": \"ElementsKit Elementor addons is an ultimate and all-in-one addons for Elementor Page Builder. The creator of ElementsKit is Team XpeedStudio and they have created it in 2023. It includes the most comprehensive modules, such as Header Footer Builder, Mega Menu Builder, Layout template Library, etc. under the one hood. It has 85+ custom elementor widgets such as an Advanced accordion, Pricing table, Team member, testimonial, Accordion, tab, Countdown Timer, etc. to create any site with ease. So, WordPress page and posts design is more flexible now. This is the best addon for Elementor page builder.Elementskit has Exclusive features that blow your mind. Like our Mega Menu Builder, Header and Footer Builder layout library, One Page Scroll, Sticky Content, and Parallax Effects, you will get tons of Premium features that you have never imagined in Elementor addons. This Elementor addon has no unique and powerful custom controls.\",\n    \"serviceDataJson\": {\n        \"location\": \"Mohammadpurr, Dhaka\",\n        \"price\": \"$40\"\n    },\n    \"categoryId\": \"123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/update-service",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"update-service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update PDF",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"siteId\": \"El123\",\n    \"pdfId\": \"1\",\n    \"relatedTo\": \"El123\",\n    \"tags\": [\"a\", \"b\", \"c\", \"d\"],\n    \"categoryId\": \"123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/update-pdf",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"update-pdf"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Conversation",
+			"item": [
+				{
+					"name": "Chat Conversation",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"siteId\": \"El123\",\n    \"categoryId\": \"123\",\n    \"serviceId\": \"El123\",\n    \"openAIKey\": \"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\",\n    \"visitorUniqueId\": \"\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"7th january, 2023 12:30PM +6 GMT\",\n    \"currentDateTime\": \"7th january, 2023. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"I need a Human ot talk.\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/conversation",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"conversation"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"siteId\": \"El123\",\n    \"categoryId\": \"123\",\n    \"serviceId\": \"El123\",\n    \"openaiKey\": \"\",\n    \"visitorUniqueId\": \"\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"7th january, 2023 12:30PM +6 GMT\",\n    \"currentDateTime\": \"7th january, 2023. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"Who and when created ElementsKit?\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/conversation",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"conversation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "160"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 10:47:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=72"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"traceCode\": \"7c6788698d4ceaf4fba1abf795121be8\",\n    \"data\": {\n        \"output\": \"ElementsKit was created by Team XpeedStudio in 2023.\"\n    },\n    \"message\": \"Got output successfully !!\"\n}"
+						},
+						{
+							"name": "Human Assistance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"siteId\": \"El123\",\n    \"categoryId\": \"123\",\n    \"serviceId\": \"El123\",\n    \"openaiKey\": \"\",\n    \"visitorUniqueId\": \"\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"7th january, 2023 12:30PM +6 GMT\",\n    \"currentDateTime\": \"7th january, 2023. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"I want to talk with Human Assistant.\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/conversation",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"conversation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "254"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 10:56:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=72"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"traceCode\": \"c095d4948d12baeb4e2b848d5cb64d81\",\n    \"data\": {\n        \"output\": \"Sure! You can reach out to our Human Assistance team at +880174486668. They will be happy to help you with any questions or concerns you may have.\"\n    },\n    \"message\": \"Got output successfully !!\"\n}"
+						},
+						{
+							"name": "Rejection Message",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"siteId\": \"El123\",\n    \"categoryId\": \"123\",\n    \"serviceId\": \"El123\",\n    \"openaiKey\": \"\",\n    \"visitorUniqueId\": \"\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"7th january, 2023 12:30PM +6 GMT\",\n    \"currentDateTime\": \"7th january, 2023. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"Do you know anything about GetGenie?\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/conversation",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"conversation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "287"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 10:58:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=72"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"traceCode\": \"049991bbad0647f391d3021d94f77fc1\",\n    \"data\": {\n        \"output\": \"I apologize, but I do not have any information about GetGenie. For more information, I recommend contacting the team at XpeedStudio or sending an email to support@xpeedstudio.com.\"\n    },\n    \"message\": \"Got output successfully !!\"\n}"
+						},
+						{
+							"name": "Convincing Message",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"siteId\": \"El123\",\n    \"categoryId\": \"123\",\n    \"serviceId\": \"El123\",\n    \"openaiKey\": \"\",\n    \"visitorUniqueId\": \"\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"7th january, 2023 12:30PM +6 GMT\",\n    \"currentDateTime\": \"7th january, 2023. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"Why should I buy ElementsKit?\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/conversation",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"conversation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "689"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 11:00:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=72"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"traceCode\": \"004faea6d1e1c339a3f331b32c3b363a\",\n    \"data\": {\n        \"output\": \"ElementsKit is a powerful toolkit that offers a wide range of features and functionalities to enhance your website. By purchasing ElementsKit annually, you can enjoy continuous access to updates, new features, and dedicated support from the XpeedStudio team. With ElementsKit, you can easily create stunning websites, customize your design, and optimize your site for better performance. It provides a seamless user experience and helps you save time and effort in building and managing your website. If you have any specific questions or need further assistance, feel free to ask!\"\n    },\n    \"message\": \"Got output successfully !!\"\n}"
+						},
+						{
+							"name": "Scope",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"siteId\": \"El123\",\n    \"categoryId\": \"123\",\n    \"serviceId\": \"El123\",\n    \"openAIKey\": \"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\",\n    \"visitorUniqueId\": \"\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"7th january, 2023 12:30PM +6 GMT\",\n    \"currentDateTime\": \"7th january, 2023. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"Which subscription I should buy for ElementsKit?\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/conversation",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"conversation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "759"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 11:15:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=72"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"traceCode\": \"47ae86857af9b67b0e3c9e99507a5053\",\n    \"data\": {\n        \"output\": \"The ElementsKit Annual plan offers a range of exclusive benefits for agencies, including features like Mega Menu Builder, Header and Footer Builder, Layout Template Library, One Page Scroll, Sticky Content, and Parallax Effects. These features allow you to create highly customizable websites, enhance the navigation experience, and add interactive elements to your clients' websites. To get started with the ElementsKit Annual plan, you can visit the XpeedStudio website at www.xpeedstudio.com and navigate to the ElementsKit page. If you have any further questions or need assistance, you can contact the XpeedStudio team at support@xpeedstudio.com.\"\n    },\n    \"message\": \"Got output successfully !!\"\n}"
+						},
+						{
+							"name": "Human Assistance",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"siteId\": \"El123\",\n    \"categoryId\": \"123\",\n    \"serviceId\": \"El123\",\n    \"openAIKey\": \"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\",\n    \"visitorUniqueId\": \"\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"7th january, 2023 12:30PM +6 GMT\",\n    \"currentDateTime\": \"7th january, 2023. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"I want to talk with a Human\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/conversation",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"conversation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "206"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 11:17:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=72"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"traceCode\": \"0578632496fe32cf1101d7c393bd0a3b\",\n    \"data\": {\n        \"output\": \"The assistance number is +880174486668. Please feel free to contact us for any further assistance.\"\n    },\n    \"message\": \"Got output successfully !!\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://0.0.0.0:3001",
+			"type": "string"
+		}
+	]
+}
