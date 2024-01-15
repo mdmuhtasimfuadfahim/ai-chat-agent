@@ -4,7 +4,7 @@ import { ChatAnthropic } from "langchain/chat_models/anthropic";
 import { BufferMemory } from "langchain/memory";
 
 const model = new ChatAnthropic({
-    apiKey: ""
+    apiKey: "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"
 });
 const prompt = ChatPromptTemplate.fromPromptMessages([
   ["system", "You ask at least 5 to 6 questions based on user's instructions and store the answers from user."],

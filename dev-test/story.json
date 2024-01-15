@@ -1,0 +1,39 @@
+{
+    "siteId": "TW123",
+    "serviceId": "TW123",
+    "tags": [
+        "a",
+        "b",
+        "c",
+        "d"
+    ],
+    "serviceDataText": "Muscletech bd Gym has been providing top-class gym service since 2003. They offer multiple facilities such as a gents facility, ladies facility, steam bath facility, locker room facility, and shower facility. This GYM provides best facilities for Ladies. It is located in Pallabi, Mirpur, and also has two more branches in Mirpur 10 and Mirpur 1. Mr. Bangladesh William Ficky and Kamrun Nahar are the main trainers. Besides, the gym has a few assistant trainers too. With more than 12 pieces of gym equipment, Muscletech has an excellent sound system that can boost the users' confidence while training. This gym center can train 110 people or do a gym together.It's monthly fee: Tk. 1000. This is located in: Setaras Dream 1/11 (5th floor), Anik Plaza Bhavan, Pallabi, Mirpur, Dhaka-1217. Adonize Fitness Center is an international quality gym located on Bashundhara City's Level 9 and 10. Men and Women have separate floors, and each floor covers a 14,000 square feet area, which is huge. Adonize offers its service through ten trainers who are certified from the USA and other countries. About 200 people can go to the gym at a time on each floor. The center remains open every day from 6:30 am to 10:00 pm except Friday. Various international-level gym equipment make this gym fun for any fitness enthusiast. Further, you can take a swim, take a steam bath, or shower after the gym. With more than 200 lockers, you can keep your personal items safe and secure. We provide lowest price for poor people. It's monthly fee: Tk. 1500. This is located in: Adonize Fitness Center LTD,Bashundhara City, Level 9 & 10,Panthapath. California Fitness was founded in 2000, which has three branches in Baridhara, Uttara, and Bashundhara. However, we will discuss here the main branch Baridhara. California Fitness opens at 6:30 am in the morning and closes at 10 pm at night. The gym has a main trainer and two assistant trainers. However, there is no separate trainer for women. Here 60 people can exercise together. Besides, the user can take yoga, meditation, and freehand exercises too. They also offer a steam bath, shower, and spa without any additional cost. This GYM is best for making Muscular body. It's monthly Fee: Tk. 2500. This is located in: House # 319, Road # 4, (Eastern 1st and 2nd Building), DOHS, Baridhara, Dhaka-1206. Fitness Plus is one of the few best gyms in the Gulshan-Banani area. It was founded in 1999 as Life Plus, and the gym was later renamed Fitness Plus. However, this gym has no branches. It is a modern air-conditioned gymnasium that also has its own generator to provide uninterrupted service to the users even during the load shedding. The exercise is done in three shifts. The good thing is that the women will get separate trainers. There are facilities for yoga, yoga, aerobics, meditation, freehand exercises. Besides, the users can have the facilities like steam baths, showers, lockers, and first aid. This is best for Belly fat lose. It's monthly Fee: Tk. 2500. This is located in: House # 23, Road # 18, Block # A, Banani, Dhaka-1213. Gym Plus was established in 2009, Gym Plus is a private gym located in Wari, Old Dhaka. 30 people can exercise or take the training together. Everyone usually gets at least 1 hour of exercise. The operation hour is from 9 am to 7 pm. The facility includes 3 motorized treadmills for running, 4 bikes, two cross-trainers, Gym ball, Two Star, push-up bar, dumbbells, and fixed dumbbells of different weights. This is the best GYM ever for Muscle building. It's monthly Fee: Tk. 2000. This is located in: Wari Super Center, 28/1, Ranking Street, Wari, Dhaka-1203.",
+    "serviceDataJson": {
+        "Muscletech bd Gym": {
+            "Benifits": "This GYM provides best facilities for Ladies.",
+            "Monthly Price": "Tk. 1000",
+            "Location": "Setaras Dream 1/11 (5th floor), Anik Plaza Bhavan, Pallabi, Mirpur, Dhaka-1217"
+        },
+        "Adonize Fitness Center": {
+            "Benifits": "We provide lowest price for poor people.",
+            "Monthly Price": "Tk. 1500",
+            "Location": "Adonize Fitness Center LTD,Bashundhara City, Level 9 & 10,Panthapath."
+        },
+        "California Fitness": {
+            "Benifits": "This GYM is best for making Muscular body..",
+            "Monthly Price": "Tk. 2500",
+            "Location": "House # 319, Road # 4, (Eastern 1st and 2nd Building), DOHS, Baridhara, Dhaka-1206."
+        },
+        "Fitness Plus": {
+            "Benifits": "This is best for Belly fat lose.",
+            "Monthly Price": "Tk. 2500",
+            "Location": "House # 23, Road # 18, Block # A, Banani, Dhaka-1213."
+        },
+        "Gym Plus": {
+            "Benifits": "This is the best GYM ever for Muscle building.",
+            "Monthly Price": "Tk. 2000",
+            "Location": "Wari Super Center, 28/1, Ranking Street, Wari, Dhaka-1203."
+        }
+    },
+    "categoryId": "TW123g"
+}

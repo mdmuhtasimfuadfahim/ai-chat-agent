@@ -27,7 +27,7 @@ export default class siteService {
     }
 
     storeInVectorDB = async () => {
-        return await MongoDBAtlasVectorSearch.fromTexts(
+        await MongoDBAtlasVectorSearch.fromTexts(
             [this.data.serviceDataText],
             [
                 {
@@ -47,6 +47,7 @@ export default class siteService {
                 embeddingKey: process.env.EMBEDDING_KEY,
             }
         );
+        return true;
     }
 
     updateService = async () => {
