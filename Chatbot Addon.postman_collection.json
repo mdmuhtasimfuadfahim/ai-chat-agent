@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"instruction\": \"Marketting Manager\",\n    \"goal\": \"Convince the customer to buy ElementsKit Annualy\",\n    \"conversationScopes\": \"ElementsKits PRO benefit for Agency\",\n    \"invalidQueryMgs\": \"Contact team XpeedStudio for better knowledge or email at support@xpeedstudio.com\",\n    \"needAssistanceQueryMgs\": \"Assistance number is +880174486668\",\n    \"siteId\": \"El123\"\n}",
+							"raw": "{\n    \"goal\": \"Convince customer to join GYM.\",\n    \"conversationScopes\": \"Always talk about the benfits of GYM.\",\n    \"invalidQueryMgs\": \"Contact the support for better knowledge. Email at: support@gym-bangladesh.com\",\n    \"needAssistanceQueryMgs\": \"Email at GYM Service: support@gym-bangladesh.com or contact GYM service Manager - Name: Muhtasim, Contact: +880174486668.\",\n    \"siteId\": \"TEX123\",\n    \"instruction\": \"You are a GYM Trainer. You suggest best GYM by fulfilling the purpose of Customer.\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -43,7 +43,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"siteId\": \"El123\"\n}",
+							"raw": "{\n    \"siteId\": \"TEX123\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -70,7 +70,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"siteId\": \"El123\"\n}",
+							"raw": "{\n    \"siteId\": \"TEX123\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -102,7 +102,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"siteId\": \"El123\",\n    \"serviceId\": \"El123\",\n    \"tags\": [\"a\", \"b\", \"c\", \"d\"],\n    \"serviceDataText\": \"ElementsKit Elementor addons is an ultimate and all-in-one addons for Elementor Page Builder. The creator of ElementsKit is Team XpeedStudio and they have created it in 2023. It includes the most comprehensive modules, such as Header Footer Builder, Mega Menu Builder, Layout template Library, etc. under the one hood. It has 85+ custom elementor widgets such as an Advanced accordion, Pricing table, Team member, testimonial, Accordion, tab, Countdown Timer, etc. to create any site with ease. So, WordPress page and posts design is more flexible now. This is the best addon for Elementor page builder.Elementskit has Exclusive features that blow your mind. Like our Mega Menu Builder, Header and Footer Builder layout library, One Page Scroll, Sticky Content, and Parallax Effects, you will get tons of Premium features that you have never imagined in Elementor addons. This Elementor addon has no unique and powerful custom controls.\",\n    \"serviceDataJson\": {\n        \"location\": \"Mohammadpurr, Dhaka\",\n        \"price\": \"$40\"\n    },\n    \"categoryId\": \"123\"\n}",
+							"raw": "{\n    \"siteId\": \"TEX123\",\n    \"serviceId\": \"ser-TEX123\",\n    \"tags\": [\n        \"a\",\n        \"b\",\n        \"c\",\n        \"d\"\n    ],\n    \"serviceDataText\": \"Muscletech bd Gym has been providing top-class gym service since 2003. They offer multiple facilities such as a gents facility, ladies facility, steam bath facility, locker room facility, and shower facility. This GYM provides best facilities for Ladies. It is located in Pallabi, Mirpur, and also has two more branches in Mirpur 10 and Mirpur 1. Mr. Bangladesh William Ficky and Kamrun Nahar are the main trainers. Besides, the gym has a few assistant trainers too. With more than 12 pieces of gym equipment, Muscletech has an excellent sound system that can boost the users' confidence while training. This gym center can train 110 people or do a gym together.It's monthly fee: Tk. 1000. This is located in: Setaras Dream 1/11 (5th floor), Anik Plaza Bhavan, Pallabi, Mirpur, Dhaka-1217. Adonize Fitness Center is an international quality gym located on Bashundhara City's Level 9 and 10. Men and Women have separate floors, and each floor covers a 14,000 square feet area, which is huge. Adonize offers its service through ten trainers who are certified from the USA and other countries. About 200 people can go to the gym at a time on each floor. The center remains open every day from 6:30 am to 10:00 pm except Friday. Various international-level gym equipment make this gym fun for any fitness enthusiast. Further, you can take a swim, take a steam bath, or shower after the gym. With more than 200 lockers, you can keep your personal items safe and secure. We provide lowest price for poor people. It's monthly fee: Tk. 1500. This is located in: Adonize Fitness Center LTD,Bashundhara City, Level 9 & 10,Panthapath. California Fitness was founded in 2000, which has three branches in Baridhara, Uttara, and Bashundhara. However, we will discuss here the main branch Baridhara. California Fitness opens at 6:30 am in the morning and closes at 10 pm at night. The gym has a main trainer and two assistant trainers. However, there is no separate trainer for women. Here 60 people can exercise together. Besides, the user can take yoga, meditation, and freehand exercises too. They also offer a steam bath, shower, and spa without any additional cost. This GYM is best for making Muscular body. It's monthly Fee: Tk. 2500. This is located in: House # 319, Road # 4, (Eastern 1st and 2nd Building), DOHS, Baridhara, Dhaka-1206. Fitness Plus is one of the few best gyms in the Gulshan-Banani area. It was founded in 1999 as Life Plus, and the gym was later renamed Fitness Plus. However, this gym has no branches. It is a modern air-conditioned gymnasium that also has its own generator to provide uninterrupted service to the users even during the load shedding. The exercise is done in three shifts. The good thing is that the women will get separate trainers. There are facilities for yoga, yoga, aerobics, meditation, freehand exercises. Besides, the users can have the facilities like steam baths, showers, lockers, and first aid. This is best for Belly fat lose. It's monthly Fee: Tk. 2500. This is located in: House # 23, Road # 18, Block # A, Banani, Dhaka-1213. Gym Plus was established in 2009, Gym Plus is a private gym located in Wari, Old Dhaka. 30 people can exercise or take the training together. Everyone usually gets at least 1 hour of exercise. The operation hour is from 9 am to 7 pm. The facility includes 3 motorized treadmills for running, 4 bikes, two cross-trainers, Gym ball, Two Star, push-up bar, dumbbells, and fixed dumbbells of different weights. This is the best GYM ever for Muscle building. It's monthly Fee: Tk. 2000. This is located in: Wari Super Center, 28/1, Ranking Street, Wari, Dhaka-1203.\",\n    \"serviceDataJson\": {\n        \"Muscletech bd Gym\": {\n            \"Benifits\": \"This GYM provides best facilities for Ladies.\",\n            \"Monthly Price\": \"Tk. 1000\",\n            \"Location\": \"Setaras Dream 1/11 (5th floor), Anik Plaza Bhavan, Pallabi, Mirpur, Dhaka-1217\"\n        },\n        \"Adonize Fitness Center\": {\n            \"Benifits\": \"We provide lowest price for poor people.\",\n            \"Monthly Price\": \"Tk. 1500\",\n            \"Location\": \"Adonize Fitness Center LTD,Bashundhara City, Level 9 & 10,Panthapath.\"\n        },\n        \"California Fitness\": {\n            \"Benifits\": \"This GYM is best for making Muscular body..\",\n            \"Monthly Price\": \"Tk. 2500\",\n            \"Location\": \"House # 319, Road # 4, (Eastern 1st and 2nd Building), DOHS, Baridhara, Dhaka-1206.\"\n        },\n        \"Fitness Plus\": {\n            \"Benifits\": \"This is best for Belly fat lose.\",\n            \"Monthly Price\": \"Tk. 2500\",\n            \"Location\": \"House # 23, Road # 18, Block # A, Banani, Dhaka-1213.\"\n        },\n        \"Gym Plus\": {\n            \"Benifits\": \"This is the best GYM ever for Muscle building.\",\n            \"Monthly Price\": \"Tk. 2000\",\n            \"Location\": \"Wari Super Center, 28/1, Ranking Street, Wari, Dhaka-1203.\"\n        }\n    },\n    \"categoryId\": \"cat-TEX123\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -129,7 +129,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"siteId\": \"El123\",\n    \"pdfId\": \"1\",\n    \"relatedTo\": \"El123\",\n    \"tags\": [\"a\", \"b\", \"c\", \"d\"],\n    \"categoryId\": \"123\"\n}",
+							"raw": "{\n    \"siteId\": \"TEX123\",\n    \"pdfId\": \"7xueji\",\n    \"relatedTo\": \"ser-TEX123\",\n    \"tags\": [\"a\", \"b\", \"c\", \"d\"],\n    \"categoryId\": \"cat-TEX123\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -161,7 +161,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"siteId\": \"El123\",\n    \"categoryId\": \"123\",\n    \"serviceId\": \"El123\",\n    \"openAIKey\": \"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\",\n    \"visitorUniqueId\": \"\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"7th january, 2023 12:30PM +6 GMT\",\n    \"currentDateTime\": \"7th january, 2023. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"I need a Human ot talk.\"\n    }\n}",
+							"raw": "{\n    \"siteId\": \"TEX123\",\n    \"categoryId\": \"cat-TEX123\",\n    \"serviceId\": \"ser-TEX123\",\n    \"openAIKey\": \"API_KEY\",\n    \"visitorUniqueId\": \"453\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"13th january, 2024 12:30PM +6 GMT\",\n    \"currentDateTime\": \"13th january, 2024. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"I want to talk with a Human Assistance.\"\n    }\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -181,13 +181,13 @@
 					},
 					"response": [
 						{
-							"name": "Success",
+							"name": "Belly fat lose",
 							"originalRequest": {
 								"method": "POST",
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"siteId\": \"El123\",\n    \"categoryId\": \"123\",\n    \"serviceId\": \"El123\",\n    \"openaiKey\": \"\",\n    \"visitorUniqueId\": \"\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"7th january, 2023 12:30PM +6 GMT\",\n    \"currentDateTime\": \"7th january, 2023. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"Who and when created ElementsKit?\"\n    }\n}",
+									"raw": "{\n    \"siteId\": \"MUH123\",\n    \"categoryId\": \"J123g\",\n    \"serviceId\": \"MUH123\",\n    \"openAIKey\": \"API_KEY\",\n    \"visitorUniqueId\": \"453\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"13th january, 2024 12:30PM +6 GMT\",\n    \"currentDateTime\": \"13th january, 2024. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"Which GYM is best for Belly fat lose?\"\n    }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -215,11 +215,11 @@
 								},
 								{
 									"key": "content-length",
-									"value": "160"
+									"value": "156"
 								},
 								{
 									"key": "Date",
-									"value": "Fri, 12 Jan 2024 10:47:17 GMT"
+									"value": "Mon, 15 Jan 2024 10:53:28 GMT"
 								},
 								{
 									"key": "Connection",
@@ -231,16 +231,16 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"traceCode\": \"7c6788698d4ceaf4fba1abf795121be8\",\n    \"data\": {\n        \"output\": \"ElementsKit was created by Team XpeedStudio in 2023.\"\n    },\n    \"message\": \"Got output successfully !!\"\n}"
+							"body": "{\n    \"traceCode\": \"f4888205f54e4496abaacb00da14a394\",\n    \"data\": {\n        \"output\": \"Fitness Plus is the best gym for belly fat loss.\"\n    },\n    \"message\": \"Got output successfully !!\"\n}"
 						},
 						{
-							"name": "Human Assistance",
+							"name": "Tk 1000",
 							"originalRequest": {
 								"method": "POST",
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"siteId\": \"El123\",\n    \"categoryId\": \"123\",\n    \"serviceId\": \"El123\",\n    \"openaiKey\": \"\",\n    \"visitorUniqueId\": \"\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"7th january, 2023 12:30PM +6 GMT\",\n    \"currentDateTime\": \"7th january, 2023. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"I want to talk with Human Assistant.\"\n    }\n}",
+									"raw": "{\n    \"siteId\": \"MUH123\",\n    \"categoryId\": \"J123g\",\n    \"serviceId\": \"MUH123\",\n    \"openAIKey\": \"API_KEY\",\n    \"visitorUniqueId\": \"453\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"13th january, 2024 12:30PM +6 GMT\",\n    \"currentDateTime\": \"13th january, 2024. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"I want a GYM within TK 1000. Suggest me.\"\n    }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -268,11 +268,11 @@
 								},
 								{
 									"key": "content-length",
-									"value": "254"
+									"value": "202"
 								},
 								{
 									"key": "Date",
-									"value": "Fri, 12 Jan 2024 10:56:36 GMT"
+									"value": "Mon, 15 Jan 2024 10:54:49 GMT"
 								},
 								{
 									"key": "Connection",
@@ -284,16 +284,16 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"traceCode\": \"c095d4948d12baeb4e2b848d5cb64d81\",\n    \"data\": {\n        \"output\": \"Sure! You can reach out to our Human Assistance team at +880174486668. They will be happy to help you with any questions or concerns you may have.\"\n    },\n    \"message\": \"Got output successfully !!\"\n}"
+							"body": "{\n    \"traceCode\": \"7a970e65f1b36a68782a09d62b407cc4\",\n    \"data\": {\n        \"output\": \"Muscletech bd Gym is a gym that fits within your budget. They offer a monthly fee of Tk. 1000.\"\n    },\n    \"message\": \"Got output successfully !!\"\n}"
 						},
 						{
-							"name": "Rejection Message",
+							"name": "Facilities",
 							"originalRequest": {
 								"method": "POST",
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"siteId\": \"El123\",\n    \"categoryId\": \"123\",\n    \"serviceId\": \"El123\",\n    \"openaiKey\": \"\",\n    \"visitorUniqueId\": \"\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"7th january, 2023 12:30PM +6 GMT\",\n    \"currentDateTime\": \"7th january, 2023. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"Do you know anything about GetGenie?\"\n    }\n}",
+									"raw": "{\n    \"siteId\": \"MUH123\",\n    \"categoryId\": \"J123g\",\n    \"serviceId\": \"MUH123\",\n    \"openAIKey\": \"API_KEY\",\n    \"visitorUniqueId\": \"453\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"13th january, 2024 12:30PM +6 GMT\",\n    \"currentDateTime\": \"13th january, 2024. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"Which GYM provides best facilities for ladies?\"\n    }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -321,11 +321,11 @@
 								},
 								{
 									"key": "content-length",
-									"value": "287"
+									"value": "166"
 								},
 								{
 									"key": "Date",
-									"value": "Fri, 12 Jan 2024 10:58:29 GMT"
+									"value": "Mon, 15 Jan 2024 10:55:26 GMT"
 								},
 								{
 									"key": "Connection",
@@ -337,16 +337,16 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"traceCode\": \"049991bbad0647f391d3021d94f77fc1\",\n    \"data\": {\n        \"output\": \"I apologize, but I do not have any information about GetGenie. For more information, I recommend contacting the team at XpeedStudio or sending an email to support@xpeedstudio.com.\"\n    },\n    \"message\": \"Got output successfully !!\"\n}"
+							"body": "{\n    \"traceCode\": \"9c3cadf70aabbddd9c8c1176ea5c1147\",\n    \"data\": {\n        \"output\": \"Muscletech bd Gym provides the best facilities for ladies.\"\n    },\n    \"message\": \"Got output successfully !!\"\n}"
 						},
 						{
-							"name": "Convincing Message",
+							"name": "Muscletech bd Gym Benefits",
 							"originalRequest": {
 								"method": "POST",
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"siteId\": \"El123\",\n    \"categoryId\": \"123\",\n    \"serviceId\": \"El123\",\n    \"openaiKey\": \"\",\n    \"visitorUniqueId\": \"\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"7th january, 2023 12:30PM +6 GMT\",\n    \"currentDateTime\": \"7th january, 2023. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"Why should I buy ElementsKit?\"\n    }\n}",
+									"raw": "{\n    \"siteId\": \"MUH123\",\n    \"categoryId\": \"J123g\",\n    \"serviceId\": \"MUH123\",\n    \"openAIKey\": \"API_KEY\",\n    \"visitorUniqueId\": \"453\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"13th january, 2024 12:30PM +6 GMT\",\n    \"currentDateTime\": \"13th january, 2024. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"What are the benefits of Muscletech bd Gym?\"\n    }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -374,11 +374,11 @@
 								},
 								{
 									"key": "content-length",
-									"value": "689"
+									"value": "331"
 								},
 								{
 									"key": "Date",
-									"value": "Fri, 12 Jan 2024 11:00:24 GMT"
+									"value": "Mon, 15 Jan 2024 10:56:26 GMT"
 								},
 								{
 									"key": "Connection",
@@ -390,16 +390,16 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"traceCode\": \"004faea6d1e1c339a3f331b32c3b363a\",\n    \"data\": {\n        \"output\": \"ElementsKit is a powerful toolkit that offers a wide range of features and functionalities to enhance your website. By purchasing ElementsKit annually, you can enjoy continuous access to updates, new features, and dedicated support from the XpeedStudio team. With ElementsKit, you can easily create stunning websites, customize your design, and optimize your site for better performance. It provides a seamless user experience and helps you save time and effort in building and managing your website. If you have any specific questions or need further assistance, feel free to ask!\"\n    },\n    \"message\": \"Got output successfully !!\"\n}"
+							"body": "{\n    \"traceCode\": \"9602283acaf0a8cc8035df6cf387e5a2\",\n    \"data\": {\n        \"output\": \"The benefits of Muscletech bd Gym include multiple facilities, experienced trainers, assistant trainers, well-equipped gym, confidence-boosting sound system, spacious capacity, affordable monthly fee, and multiple branches.\"\n    },\n    \"message\": \"Got output successfully !!\"\n}"
 						},
 						{
-							"name": "Scope",
+							"name": "Area Wise Search",
 							"originalRequest": {
 								"method": "POST",
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"siteId\": \"El123\",\n    \"categoryId\": \"123\",\n    \"serviceId\": \"El123\",\n    \"openAIKey\": \"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\",\n    \"visitorUniqueId\": \"\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"7th january, 2023 12:30PM +6 GMT\",\n    \"currentDateTime\": \"7th january, 2023. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"Which subscription I should buy for ElementsKit?\"\n    }\n}",
+									"raw": "{\n    \"siteId\": \"MUH123\",\n    \"categoryId\": \"J123g\",\n    \"serviceId\": \"MUH123\",\n    \"openAIKey\": \"API_KEY\",\n    \"visitorUniqueId\": \"453\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"13th january, 2024 12:30PM +6 GMT\",\n    \"currentDateTime\": \"13th january, 2024. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"Suggest me a best GYM in Baridhara.\"\n    }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -427,11 +427,11 @@
 								},
 								{
 									"key": "content-length",
-									"value": "759"
+									"value": "309"
 								},
 								{
 									"key": "Date",
-									"value": "Fri, 12 Jan 2024 11:15:31 GMT"
+									"value": "Mon, 15 Jan 2024 10:57:16 GMT"
 								},
 								{
 									"key": "Connection",
@@ -443,16 +443,16 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"traceCode\": \"47ae86857af9b67b0e3c9e99507a5053\",\n    \"data\": {\n        \"output\": \"The ElementsKit Annual plan offers a range of exclusive benefits for agencies, including features like Mega Menu Builder, Header and Footer Builder, Layout Template Library, One Page Scroll, Sticky Content, and Parallax Effects. These features allow you to create highly customizable websites, enhance the navigation experience, and add interactive elements to your clients' websites. To get started with the ElementsKit Annual plan, you can visit the XpeedStudio website at www.xpeedstudio.com and navigate to the ElementsKit page. If you have any further questions or need assistance, you can contact the XpeedStudio team at support@xpeedstudio.com.\"\n    },\n    \"message\": \"Got output successfully !!\"\n}"
+							"body": "{\n    \"traceCode\": \"ada06944e003695aa821d052a4092d82\",\n    \"data\": {\n        \"output\": \"The best gym in Baridhara is California Fitness. It is located at House # 319, Road # 4, (Eastern 1st and 2nd Building), DOHS, Baridhara, Dhaka-1206. The monthly fee for California Fitness is Tk. 2500.\"\n    },\n    \"message\": \"Got output successfully !!\"\n}"
 						},
 						{
-							"name": "Human Assistance",
+							"name": "Muscle Building",
 							"originalRequest": {
 								"method": "POST",
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n    \"siteId\": \"El123\",\n    \"categoryId\": \"123\",\n    \"serviceId\": \"El123\",\n    \"openAIKey\": \"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\",\n    \"visitorUniqueId\": \"\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"7th january, 2023 12:30PM +6 GMT\",\n    \"currentDateTime\": \"7th january, 2023. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"I want to talk with a Human\"\n    }\n}",
+									"raw": "{\n    \"siteId\": \"MUH123\",\n    \"categoryId\": \"J123g\",\n    \"serviceId\": \"MUH123\",\n    \"openAIKey\": \"API_KEY\",\n    \"visitorUniqueId\": \"453\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"13th january, 2024 12:30PM +6 GMT\",\n    \"currentDateTime\": \"13th january, 2024. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"Suggest me a GYM which is good for Muscle Building.\"\n    }\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -480,11 +480,11 @@
 								},
 								{
 									"key": "content-length",
-									"value": "206"
+									"value": "540"
 								},
 								{
 									"key": "Date",
-									"value": "Fri, 12 Jan 2024 11:17:59 GMT"
+									"value": "Mon, 15 Jan 2024 10:59:13 GMT"
 								},
 								{
 									"key": "Connection",
@@ -496,7 +496,219 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"traceCode\": \"0578632496fe32cf1101d7c393bd0a3b\",\n    \"data\": {\n        \"output\": \"The assistance number is +880174486668. Please feel free to contact us for any further assistance.\"\n    },\n    \"message\": \"Got output successfully !!\"\n}"
+							"body": "{\n    \"traceCode\": \"9c9c8b9b24a3cb76b3b30d29f592ae48\",\n    \"data\": {\n        \"output\": \"Based on your goal of muscle building, I recommend Gym Plus. They have a variety of equipment like treadmills, bikes, cross-trainers, and dumbbells that can help you effectively work on building muscle. Additionally, they offer a personalized experience with a maximum of 30 people at a time. Joining a gym can have numerous benefits for your overall health and well-being, so I encourage you to consider Gym Plus as a great option.\"\n    },\n    \"message\": \"Got output successfully !!\"\n}"
+						},
+						{
+							"name": "Human Assistant",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"siteId\": \"MUH123\",\n    \"categoryId\": \"J123g\",\n    \"serviceId\": \"MUH123\",\n    \"openAIKey\": \"API_KEY\",\n    \"visitorUniqueId\": \"453\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"13th january, 2024 12:30PM +6 GMT\",\n    \"currentDateTime\": \"13th january, 2024. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"I want to talk with a Human Assistance. Provide me Human information.\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/conversation",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"conversation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "228"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 11:14:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=72"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"traceCode\": \"62a0903a8aa45d83561850abfa788719\",\n    \"data\": {\n        \"output\": \"Email at GYM Service: support@gym-bangladesh.com or contact GYM service Manager - Name: Muhtasim, Contact: +880174486668\"\n    },\n    \"message\": \"Got output successfully !!\"\n}"
+						},
+						{
+							"name": "Price Range",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"siteId\": \"MUH123\",\n    \"categoryId\": \"J123g\",\n    \"serviceId\": \"MUH123\",\n    \"openAIKey\": \"API_KEY\",\n    \"visitorUniqueId\": \"453\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"13th january, 2024 12:30PM +6 GMT\",\n    \"currentDateTime\": \"13th january, 2024. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"My monthly price range in 1000 to 1500 tk. Sugeest me GYMs within these price.\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/conversation",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"conversation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "619"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 11:28:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=72"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"traceCode\": \"8beed1858f470a53a8cad925e2d6851c\",\n    \"data\": {\n        \"output\": \"Based on your price range of 1000 to 1500 tk, I recommend two gyms: Muscletech bd Gym and Adonize Fitness Center. Muscletech bd Gym has a monthly fee of Tk. 1000 and is located in Pallabi, Mirpur, with two more branches in Mirpur 10 and Mirpur 1. Adonize Fitness Center has a monthly fee of Tk. 1500 and is located in Bashundhara City, Level 9 & 10, Panthapath. Both gyms offer various facilities and have certified trainers to assist you in your fitness journey. Let me know if you need any further assistance!\"\n    },\n    \"message\": \"Got output successfully !!\"\n}"
+						},
+						{
+							"name": "Muscle Building",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"siteId\": \"TEX123\",\n    \"categoryId\": \"cat-TEX123\",\n    \"serviceId\": \"ser-TEX123\",\n    \"openAIKey\": \"API_KEY\",\n    \"visitorUniqueId\": \"453\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"13th january, 2024 12:30PM +6 GMT\",\n    \"currentDateTime\": \"13th january, 2024. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"Which GYM can provide me best Muscle building training?\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/conversation",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"conversation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "446"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 13:30:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=72"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"traceCode\": \"447c6d2432dd4bc8a455f3f2ed38d5b7\",\n    \"data\": {\n        \"output\": \"The GYM that can provide you with the best muscle building training is Gym Plus, located in Wari, Old Dhaka. They have a variety of equipment such as motorized treadmills, bikes, cross-trainers, gym balls, push-up bars, dumbbells, and fixed dumbbells of different weights. They focus on muscle building and have a monthly fee of Tk. 2000.\"\n    },\n    \"message\": \"Got output successfully !!\"\n}"
+						},
+						{
+							"name": "Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"siteId\": \"TEX123\",\n    \"categoryId\": \"cat-TEX123\",\n    \"serviceId\": \"ser-TEX123\",\n    \"openAIKey\": \"API_KEY\",\n    \"visitorUniqueId\": \"453\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"13th january, 2024 12:30PM +6 GMT\",\n    \"currentDateTime\": \"13th january, 2024. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"Which Software is good for AI?\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/conversation",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"conversation"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "content-length",
+									"value": "186"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 13:55:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=72"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"traceCode\": \"85dfee6170ff127711c32c1f2e23ec40\",\n    \"data\": {\n        \"output\": \"Contact the support for better knowledge. Email at: support@gym-bangladesh.com\"\n    },\n    \"message\": \"Got output successfully !!\"\n}"
 						}
 					]
 				}
