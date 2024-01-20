@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
         {
-            "src": "./server.js",
-            "use": "@vercel/node"
+            "src": "server.js",
+            "use": "@now/node"
         }
     ],
-    "redirects": [
+    "routes": [
         {
-            "source": "/",
-            "destination": "https://github.com/emranio/ai-chat-agent/"
+            "src": "(.*)",
+            "dest": "server.js"
         }
     ]
 }
