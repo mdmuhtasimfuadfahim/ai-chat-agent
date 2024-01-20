@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "./server.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "redirects": [
+        {
+            "source": "/",
+            "destination": "https://github.com/emranio/ai-chat-agent/"
+        }
+    ]
+}
