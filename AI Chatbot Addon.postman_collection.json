@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "1378427d-ed5e-430c-80ba-3707550d6fb7",
-		"name": "Chatbot Addon",
+		"_postman_id": "6da126b3-9698-4403-87d5-33d8fcfda0cd",
+		"name": "AI Chatbot Addon",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "25506484"
 	},
@@ -738,7 +738,7 @@
 	"variable": [
 		{
 			"key": "url",
-			"value": "http://0.0.0.0:3001",
+			"value": "https://ai-chat-agent-3nxi.vercel.app",
 			"type": "string"
 		}
 	]
