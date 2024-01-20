@@ -30,8 +30,12 @@ export default s.object()
                 )
         )
     )
-    .prop('Mgs', s.object()
-        .prop('bot', s.string())
-        .prop('visitorName', s.string())
-        .prop('visitorMessage', s.string())
-    ).required();
+    .prop('Mgs', s.array()
+        .items(
+            s.object()
+                .prop('sender', s.string().enum(['bot', 'human']).required())
+                .prop('message', s.string().required())
+        )
+        .minItems(1)
+    )
+    .required();
