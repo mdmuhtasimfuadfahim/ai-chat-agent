@@ -100,6 +100,7 @@ export default class conversationService {
 
         const siteData = await this.findSiteData();
         const optionData = await this.findOptionData();
+        console.log("optionData:", optionData)
 
         if (this.data.openAIKey && this.data.openAIKey !== "") {
             this.API_KEY = this.data.openAIKey;
