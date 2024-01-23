@@ -13,7 +13,7 @@ const HOST = "0.0.0.0";
 
 const server = Fastify({
     ignoreTrailingSlash: true,
-    // logger: true,
+    logger: true,
 });
 
 server.register(fastifyMultipart, {

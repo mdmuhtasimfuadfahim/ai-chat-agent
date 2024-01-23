@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "1378427d-ed5e-430c-80ba-3707550d6fb7",
-		"name": "Chatbot Addon",
+		"_postman_id": "6da126b3-9698-4403-87d5-33d8fcfda0cd",
+		"name": "AI Chatbot Addon",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "25506484"
 	},
@@ -161,7 +161,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"siteId\": \"TEX123\",\n    \"categoryId\": \"cat-TEX123\",\n    \"serviceId\": \"ser-TEX123\",\n    \"openAIKey\": \"API_KEY\",\n    \"visitorUniqueId\": \"453\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"13th january, 2024 12:30PM +6 GMT\",\n    \"currentDateTime\": \"13th january, 2024. 12:30PM +6 GMT\",\n    \"Mgs\":{\n        \"bot\": \"hi\",\n        \"visitorName\": \"Muhtasim\",\n        \"visitorMessage\": \"I want to talk with a Human Assistance.\"\n    }\n}",
+							"raw": "{\n    \"siteId\": \"TEX123\",\n    \"categoryId\": \"cat-TEX123\",\n    \"serviceId\": \"ser-TEX123\",\n    \"openAIKey\": \"API_KEY\",\n    \"visitorUniqueId\": \"453\",\n    \"visitorEmail\": \"muhtasim@gmail.com\",\n    \"visitorName\": \"Muhtasim\",\n    \"realTimeServiceInfo\":[\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        },\n        {\n            \"serviceId\": \"\",\n            \"serviceTitle\": \"\",\n            \"shortDesc\": \"\",\n            \"availableDates\": \"comma separated data\"\n        }\n    ],\n    \"startDateTime\": \"13th january, 2024 12:30PM +6 GMT\",\n    \"currentDateTime\": \"13th january, 2024. 12:30PM +6 GMT\",\n    \"Mgs\":[\n        { \"sender\": \"bot\", \"message\": \"Hello, How can I help you today?\" },\n        { \"sender\": \"human\", \"message\": \"Which GYM is good for Belly fat lose?\" }\n    ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -738,7 +738,7 @@
 	"variable": [
 		{
 			"key": "url",
-			"value": "http://0.0.0.0:3001",
+			"value": "https://ai-chat-agent-3nxi.vercel.app",
 			"type": "string"
 		}
 	]
