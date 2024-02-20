@@ -10,6 +10,10 @@ const optionSchema = mongoose.Schema({
         type: String,
         trim: true
     },
+    welcomeMgs: {
+        type: String,
+        trim: true
+    },
     goal: {
         type: String,
         trim: true
