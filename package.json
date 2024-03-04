@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mdmuhtasimfuadfahim/helpdesk-backend.git"
+    "url": "git+https://github.com/emranio/ai-chat-agent.git"
   },
   "keywords": [
     "Langchain",
@@ -19,12 +19,12 @@
     "Fastify",
     "Embedded DB"
   ],
-  "author": "mdmuhtasimfuadfahim, mahmudsagar",
+  "author": "emranio, mdmuhtasimfuadfahim",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mdmuhtasimfuadfahim/helpdesk-backend/issues"
+    "url": "https://github.com/emranio/ai-chat-agent/issues"
   },
-  "homepage": "https://github.com/mdmuhtasimfuadfahim/helpdesk-backend#readme",
+  "homepage": "https://github.com/emranio/ai-chat-agent#readme",
   "dependencies": {
     "@anthropic-ai/sdk": "^0.6.2",
     "@fastify/autoload": "^5.7.1",
