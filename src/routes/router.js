@@ -10,99 +10,99 @@ import conversationController from "../controllers/conversation.controller.js";
 
 export default (fastify, options, done) => {
 
-    const updateOptions = async (req, reply) => {
-        return {
-            schema: {
-                tags: [{
-                    name: 'Update Service Options'
-                }],
-                description: 'Update / Add Service Options',
-                response: {
-                    200: schemaFormatter(replySehema)
-                },
-                body: optionsSchema,
+    const updateOptions = {
+        schema: {
+            tags: [{
+                name: 'Update Service Options'
+            }],
+            description: 'Update / Add Service Options',
+            response: {
+                200: schemaFormatter(replySehema)
             },
-            handler: await new optionsController(req, reply).updateOptions(),
+            body: optionsSchema,
+        },
+        handler: async (req, reply) => {
+            return await new optionsController(req, reply).updateOptions();
         }
     };
 
-    const findOptions = async (req, reply) => {
-        return {
-            schema: {
-                tags: [{
-                    name: 'Find Service Options'
-                }],
-                description: 'Find Service Options',
-                response: {
-                    200: schemaFormatter(replySehema)
-                },
-                body: optionsSchema,
+    const findOptions = {
+        schema: {
+            tags: [{
+                name: 'Find Service Options'
+            }],
+            description: 'Find Service Options',
+            response: {
+                200: schemaFormatter(replySehema)
             },
-            handler: await new optionsController(req, reply).findOptions(),
+            body: optionsSchema,
+        },
+        handler: async (req, reply) => {
+            return await new optionsController(req, reply).findOptions();
         }
     };
 
-    const deleteOptions = async (req, reply) => {
-        return {
-            schema: {
-                tags: [{
-                    name: 'Delete Service Options'
-                }],
-                description: 'Delete Service Options',
-                response: {
-                    200: schemaFormatter(replySehema)
-                },
-                body: optionsSchema,
+    const deleteOptions = {
+        schema: {
+            tags: [{
+                name: 'Delete Service Options'
+            }],
+            description: 'Delete Service Options',
+            response: {
+                200: schemaFormatter(replySehema)
             },
-            handler: await new optionsController(req, reply).deleteOptions(),
+            body: optionsSchema,
+        },
+        handler: async (req, reply) => {
+            return await new optionsController(req, reply).deleteOptions();
         }
     };
 
-    const updateService = async (req, reply) => {
-        return {
-            schema: {
-                tags: [{
-                    name: 'Update Service'
-                }],
-                description: 'Update Service',
-                response: {
-                    200: schemaFormatter(replySehema)
-                },
-                body: serviceSchema,
+    const updateService = {
+        schema: {
+            tags: [{
+                name: 'Update Service'
+            }],
+            description: 'Update Service',
+            response: {
+                200: schemaFormatter(replySehema)
             },
-            handler: await new siteController(req, reply).updateService(),
+            body: serviceSchema,
+        },
+        handler: async (req, reply) => {
+            return await new siteController(req, reply).updateService();
         }
     };
 
-    const updatePDF = async (req, reply) => {
-        return {
-            schema: {
-                tags: [{
-                    name: 'Update Site'
-                }],
-                description: 'Update Service',
-                response: {
-                    200: schemaFormatter(replySehema)
-                },
-                body: siteSchema,
+    const updatePDF = {
+        schema: {
+            tags: [{
+                name: 'Update Site'
+            }],
+            description: 'Update Service',
+            response: {
+                200: schemaFormatter(replySehema)
             },
-            handler: await new siteController(req, reply).updatePDF(),
+            body: siteSchema,
+        },
+        handler: async (req, reply) => {
+            return await new siteController(req, reply).updatePDF();
         }
     };
 
-    const conversation = async (req, reply) => {
-        return {
-            schema: {
-                tags: [{
-                    name: 'Conversational Agent'
-                }],
-                description: 'Conversational Agent',
-                response: {
-                    200: schemaFormatter(replySehema)
-                },
-                body: conversationSchema,
+    const conversation = {
+        schema: {
+            tags: [{
+                name: 'Conversational Agent'
+            }],
+            description: 'Conversational Agent',
+            response: {
+                200: schemaFormatter(replySehema)
             },
-            handler: await new conversationController(req, reply).conversation(),
+            body: conversationSchema,
+        },
+        handler: async (req, reply) => {
+            return await new conversationController(req, reply).conversation();
         }
     };
 
@@ -114,36 +114,24 @@ export default (fastify, options, done) => {
      * Options APIs
      */
 
-    fastify.post("/api/update-options", async (req, reply) => {
-        await updateOptions(req, reply);
-    });
+    fastify.post("/api/update-options", updateOptions);
 
-    fastify.post("/api/get-options", async (req, reply) => {
-        await findOptions(req, reply);
-    });
+    fastify.post("/api/get-options", findOptions);
 
-    fastify.post("/api/delete-options", async (req, reply) => {
-        await deleteOptions(req, reply);
-    });
+    fastify.post("/api/delete-options", deleteOptions);
 
     /**
      * Site & Service APIs
      */
 
-    fastify.post("/api/update-service", async (req, reply) => {
-        await updateService(req, reply);
-    });
+    fastify.post("/api/update-service", updateService);
 
-    fastify.post("/api/update-pdf", async (req, reply) => {
-        await updatePDF(req, reply);
-    });
+    fastify.post("/api/update-pdf", updatePDF);
 
     /**
      * Conversation API
      */
-    fastify.post("/api/conversation", async (req, reply) => {
-        await conversation(req, reply);
-    });
+    fastify.post("/api/conversation", conversation);
 
     done();
 }

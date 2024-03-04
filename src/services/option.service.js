@@ -15,9 +15,10 @@ export default class optionsService {
         let response = {};
         let message = "Options found successfully !!";
 
-        let result = await Option.find({
-            ...this.data.siteId && { siteId: this.data.siteId }
-        });
+        let result = await Option.find(
+            { ...this.data.siteId && { siteId: this.data.siteId } },
+            { _id: 0, __v: 0 }
+        );
 
         if (result.length === 0) {
             message = "Couldn't find any options !!"
@@ -25,17 +26,19 @@ export default class optionsService {
 
         response.message = message;
         response.data = result;
+        response.traceCode = this.traceCode();
 
         return response;
     }
 
     createOption = async (data) => {
-        const option = new Option(data);
-        return await option.save();;
+        const { _id, __v, ...savedOption } = await new Option(data).save().then(o => o.toObject());
+        return savedOption;
     }
 
     update = async (siteId, data) => {
-        return await Option.findOneAndUpdate({ siteId: siteId }, data, { new: true });
+        const { _id, __v, ...updatedOption } = await Option.findOneAndUpdate({ siteId }, data, { new: true }).then(o => o.toObject());
+        return updatedOption;
     }
 
     updateOptions = async () => {

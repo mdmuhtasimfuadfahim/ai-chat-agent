@@ -5,7 +5,7 @@ const siteSchema = mongoose.Schema({
     id: {
         type: String,
         required: true,
-        default: uuid(),
+        default: () => uuid(), // generate a new UUID for each document
         unique: true,
     },
     siteId: {
