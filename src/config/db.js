@@ -5,9 +5,14 @@ export default function db(fastify, options, done) {
     mongoose.connect(mongo_uri, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-        // useCreateIndex: true,
     }).then(() => {
         console.log("MongoDB connected");
+    }).catch((err) => {
+        console.error('MongoDB connection error:', err);
+    });
+
+    mongoose.connection.on('error', err => {
+        console.error('MongoDB connection error:', err);
     });
 
     done();

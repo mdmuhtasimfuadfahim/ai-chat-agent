@@ -22,21 +22,21 @@ export default class siteService {
     }
 
     storeInDB = async () => {
-        const service = new Site(this.data);
-        return await service.save();
+        const { _id, __v, ...service } = await new Site(this.data).save().then(o => o.toObject());
+        return service;
     }
 
     storeInVectorDB = async () => {
         await MongoDBAtlasVectorSearch.fromTexts(
-            [this.data.serviceDataText],
+            [this.data?.serviceDataText || ""],
             [
                 {
                     id: uuid(),
-                    siteId: this.data.siteId,
-                    serviceId: this.data.serviceId,
-                    tags: this.data.tags,
-                    serviceDataJson: this.data.serviceDataJson,
-                    categoryId: this.data.categoryId
+                    siteId: this.data?.siteId || "",
+                    serviceId: this.data?.serviceId || "",
+                    tags: this.data?.tags || "",
+                    serviceDataJson: this.data?.serviceDataJson || "",
+                    categoryId: this.data?.categoryId || ""
                 }
             ],
             new OpenAIEmbeddings({ openAIApiKey: process.env.OPENAI_API_KEY }),
@@ -61,7 +61,6 @@ export default class siteService {
         }
 
         response.traceCode = this.traceCode();
-        response.data = vectorStore;
         response.message = message;
 
         return response;
