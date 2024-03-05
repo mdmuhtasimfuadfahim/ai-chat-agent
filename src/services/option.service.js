@@ -32,12 +32,12 @@ export default class optionsService {
     }
 
     createOption = async (data) => {
-        const { _id, __v, ...savedOption } = await new Option(data).save().then(o => o.toObject());
+        const { _id, __v, openAIKey, ...savedOption } = await new Option(data).save().then(o => o.toObject());
         return savedOption;
     }
 
     update = async (siteId, data) => {
-        const { _id, __v, ...updatedOption } = await Option.findOneAndUpdate({ siteId }, data, { new: true }).then(o => o.toObject());
+        const { _id, __v, openAIKey, ...updatedOption } = await Option.findOneAndUpdate({ siteId }, data, { new: true }).then(o => o.toObject());
         return updatedOption;
     }
 

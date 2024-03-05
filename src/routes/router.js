@@ -2,9 +2,11 @@ import optionsController from "../controllers/option.controller.js";
 import schemaFormatter from "../schemas/schema.formatter.js";
 import replySehema from "../schemas/response/reply.schema.js";
 import optionsSchema from "../schemas/request/option.schema.js";
+import findOptionsSchems from "../schemas/request/findOptions.schems.js";
 import serviceSchema from "../schemas/request/service.schema.js";
 import siteSchema from "../schemas/request/site.schema.js";
 import siteController from "../controllers/site.controller.js";
+import serviceController from "../controllers/service.controller.js";
 import conversationSchema from "../schemas/request/conversation.schema.js";
 import conversationController from "../controllers/conversation.controller.js";
 
@@ -35,7 +37,7 @@ export default (fastify, options, done) => {
             response: {
                 200: schemaFormatter(replySehema)
             },
-            body: optionsSchema,
+            body: findOptionsSchems,
         },
         handler: async (req, reply) => {
             return await new optionsController(req, reply).findOptions();
@@ -51,7 +53,7 @@ export default (fastify, options, done) => {
             response: {
                 200: schemaFormatter(replySehema)
             },
-            body: optionsSchema,
+            body: findOptionsSchems,
         },
         handler: async (req, reply) => {
             return await new optionsController(req, reply).deleteOptions();
@@ -70,23 +72,24 @@ export default (fastify, options, done) => {
             body: serviceSchema,
         },
         handler: async (req, reply) => {
-            return await new siteController(req, reply).updateService();
+            return await new serviceController(req, reply).updateService();
         }
     };
 
-    const updatePDF = {
-        schema: {
-            tags: [{
-                name: 'Update Site'
-            }],
-            description: 'Update Service',
-            response: {
-                200: schemaFormatter(replySehema)
+    const updatePDF = async (req, reply) => {
+        return {
+            schema: {
+                tags: [{
+                    name: 'Update Site'
+                }],
+                description: 'Update Service',
+                consumes: ['multipart/form-data'],
+                response: {
+                    200: schemaFormatter(replySehema)
+                },
+                body: siteSchema
             },
-            body: siteSchema,
-        },
-        handler: async (req, reply) => {
-            return await new siteController(req, reply).updatePDF();
+            handler: await new siteController(req, reply).updatePDF(),
         }
     };
 
@@ -126,7 +129,9 @@ export default (fastify, options, done) => {
 
     fastify.post("/api/update-service", updateService);
 
-    fastify.post("/api/update-pdf", updatePDF);
+    fastify.post("/api/update-pdf", async (req, reply) => {
+        await updatePDF(req, reply)
+    });
 
     /**
      * Conversation API
