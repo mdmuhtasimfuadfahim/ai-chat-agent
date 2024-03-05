@@ -1,5 +1,5 @@
 import crypto from "crypto";
-import Site from "../models/site.js";
+import Site from "../models/option.js";
 import Option from "../models/option.js";
 import { MongoClient } from "mongodb";
 import dotenv from "dotenv";
@@ -15,7 +15,7 @@ import { ChatOpenAI } from "langchain/chat_models/openai";
 const mongo_uri = `mongodb+srv://${process.env.MONGODB_USER}:${encodeURIComponent(process.env.MONGODB_PASS)}@${process.env.MONGODB_HOST}/${process.env.MONGODB_DATABASE}`
 
 const client = new MongoClient(mongo_uri || "");
-const namespace = `${process.env.MONGODB_DATABASE}.${process.env.VECTOR_DB}`;
+const namespace = `${process.env.MONGODB_DATABASE}.${process.env.SERVICE_VECTOR_DB}`;
 const [dbName, collectionName] = namespace.split(".");
 const collection = client.db(dbName).collection(collectionName);
 // const model = new ChatOpenAI({
@@ -53,8 +53,8 @@ export default class conversationService {
         return new MongoDBAtlasVectorSearch(
             new OpenAIEmbeddings({ openAIApiKey: this.API_KEY }), {
             collection,
-            indexName: process.env.INDEX_NAME,
-            textKey: process.env.TEXT_KEY,
+            indexName: process.env.SERVICE_INDEX_NAME,
+            textKey: process.env.SERVICE_TEXT_KEY,
             embeddingKey: process.env.EMBEDDING_KEY,
         });
     }
@@ -121,14 +121,11 @@ export default class conversationService {
         // const siteData = await this.findSiteData();
         const optionData = await this.findOptionData();
 
-        if (this.data.openAIKey && this.data.openAIKey !== "") {
-            const openAIKeyFormat = /^sk-[a-zA-Z0-9]+$/;
-            if (openAIKeyFormat.test(this.data.openAIKey)) {
-                this.API_KEY = this.data.openAIKey;
-            } else {
-                response.message = "Invalid OpenAI API key";
-                return response;
-            }
+        if (optionData.length && optionData[0].openAIKey) {
+            this.API_KEY = optionData[0].openAIKey;
+        } else {
+            response.message = "The openAIKey format are not valid";
+            return response;
         }
 
         const model = this.chatModel();

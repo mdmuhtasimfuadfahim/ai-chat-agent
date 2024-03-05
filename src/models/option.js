@@ -6,6 +6,10 @@ const optionSchema = mongoose.Schema({
         required: true,
         unique: true,
     },
+    openAIKey: {
+        type: String,
+        required: true
+    },
     instruction: {
         type: String,
         trim: true
