@@ -4,7 +4,7 @@ import Option from "../models/option.js";
 import { MongoClient } from "mongodb";
 import dotenv from "dotenv";
 dotenv.config();
-import { ChainTool } from "langchain/tools";
+import { ChainTool, DynamicTool } from "langchain/tools";
 import { HumanMessage, AIMessage } from "langchain/schema";
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
 import { initializeAgentExecutorWithOptions } from "langchain/agents";
@@ -15,7 +15,8 @@ import { ChatOpenAI } from "langchain/chat_models/openai";
 const mongo_uri = `mongodb+srv://${process.env.MONGODB_USER}:${encodeURIComponent(process.env.MONGODB_PASS)}@${process.env.MONGODB_HOST}/${process.env.MONGODB_DATABASE}`
 
 const client = new MongoClient(mongo_uri || "");
-const collection = client.db(process.env.MONGODB_DATABASE).collection(process.env.SERVICE_VECTOR_DB);
+const collection1 = client.db(process.env.MONGODB_DATABASE).collection(process.env.SITE_VECTOR_DB);
+const collection2 = client.db(process.env.MONGODB_DATABASE).collection(process.env.SERVICE_VECTOR_DB);
 
 export default class conversationService {
 
@@ -42,21 +43,23 @@ export default class conversationService {
         });
     }
 
-    connectWithVectorStore = async () => {
+    connectWithVectorStore = async (key) => {
+        const config = {
+            collection: key === "SITE" ? collection1 : collection2,
+            indexName: process.env[`${key.toUpperCase()}_INDEX_NAME`],
+            textKey: process.env[`${key.toUpperCase()}_TEXT_KEY`],
+            embeddingKey: process.env[`${key.toUpperCase()}_EMBEDDING_KEY`],
+        };
+
         return new MongoDBAtlasVectorSearch(
-            new OpenAIEmbeddings({ openAIApiKey: this.API_KEY }), {
-            collection,
-            indexName: process.env.SERVICE_INDEX_NAME,
-            textKey: process.env.SERVICE_TEXT_KEY,
-            embeddingKey: process.env.EMBEDDING_KEY,
-        });
+            new OpenAIEmbeddings({ openAIApiKey: this.API_KEY }), config);
     }
 
     chatModel = () => {
         return new ChatOpenAI({
             openAIApiKey: this.API_KEY,
             temperature: 0,
-            verbose: true
+            // verbose: true
         });
     }
 
@@ -111,10 +114,7 @@ export default class conversationService {
             return response;
         }
 
-        // const siteData = await this.findSiteData();
         const optionData = await this.findOptionData();
-        console.log("optionData:", optionData)
-
         if (optionData.length && optionData[0].openAIKey) {
             this.API_KEY = optionData[0].openAIKey;
         } else {
@@ -123,31 +123,24 @@ export default class conversationService {
         }
 
         const model = this.chatModel();
-        const vectorStore = await this.connectWithVectorStore();
+        const serviceVectorStore = await this.connectWithVectorStore('SERVICE');
+        // const siteVectorStore = await this.connectWithVectorStore('SITE');
 
         const chatHistory = new ChatMessageHistory(messages?.previous);
         const prompt = this.promptMaker(optionData);
 
         const chain = ConversationalRetrievalQAChain.fromLLM(
             model,
-            vectorStore.asRetriever(1, {
+            serviceVectorStore.asRetriever(1, {
                 text: {
                     query: this.data.siteId,
                     path: "siteId"
-                },
-                text: {
-                    query: this.data.serviceId,
-                    path: "serviceId"
-                },
-                text: {
-                    query: this.data.categoryId,
-                    path: "categoryId"
                 }
             }),
             {
                 memory: new BufferMemory({
                     humanPrefix: prompt,
-                    memoryKey: "chat_history",
+                    memoryKey: "chat_history_sites",
                     chatHistory,
                 }),
             }

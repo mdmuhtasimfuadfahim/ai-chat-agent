@@ -3,7 +3,7 @@ import s from "fluent-json-schema";
 const openAIKeyPattern = /^sk-[a-zA-Z0-9]{32,}$/;
 
 export default s.object()
-    .prop("siteId", s.string()).required()
+    .prop("siteId", s.string().minLength(1)).required()
     .prop("openAIKey", s.string().pattern(openAIKeyPattern)).required()
     .prop("instruction", s.string())
     .prop("welcomeMgs", s.string())
