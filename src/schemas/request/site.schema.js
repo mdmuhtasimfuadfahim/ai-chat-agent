@@ -4,7 +4,7 @@ const pdfFileNamePattern = /^.*\.(pdf|PDF)$/;
 const pdfMimeType = 'application/pdf';
 
 export default s.object()
-    .prop("siteId", s.string()).required()
+    .prop("siteId", s.string().minLength(1)).required()
     .prop("pdfId", s.string()).required()
     .prop("tags", s.array())
     .prop("relatedTo", s.string())
