@@ -13,7 +13,8 @@ export default class optionsService {
 
     findOptions = async () => {
         let response = {};
-        let message = "Options found successfully !!";
+        response.traceCode = this.traceCode();
+        response.message = "Options found successfully !!";
 
         let result = await Option.find(
             { ...this.data.siteId && { siteId: this.data.siteId } },
@@ -21,13 +22,11 @@ export default class optionsService {
         );
 
         if (result.length === 0) {
-            message = "Couldn't find any options !!"
+            response.message = "Couldn't find any options !!";
+            return response;
         }
 
-        response.message = message;
         response.data = result;
-        response.traceCode = this.traceCode();
-
         return response;
     }
 
@@ -43,7 +42,8 @@ export default class optionsService {
 
     updateOptions = async () => {
         let response = {};
-        let message = "Options updated successfully !!";
+        response.traceCode = this.traceCode();
+        response.message = "Options updated successfully !!";
         let result;
 
         const option = await this.findOptions();
@@ -56,34 +56,31 @@ export default class optionsService {
         }
 
         if (!result) {
-            message = "Error while updating";
+            response.message = "Error while updating / creating";
+            return response;
         }
 
-        response.message = message;
         response.data = result;
-        response.traceCode = this.traceCode();
-
         return response;
     }
 
     deleteOptions = async () => {
         let response = {};
-        let message = "Options deleted successfully !!";
+        response.traceCode = this.traceCode();
+        response.message = "Options deleted successfully !!";
         let result;
 
         const option = await this.findOptions();
         if (!option.data || option.data.length === 0) {
-            message = option.message;;
+            response.message = option.message;
+            return response;
         }
 
         result = await Option.deleteOne({
             siteId: this.data.siteId
         });
 
-        response.message = message;
         response.data = result;
-        response.traceCode = this.traceCode();
-
         return response;
     }
 }

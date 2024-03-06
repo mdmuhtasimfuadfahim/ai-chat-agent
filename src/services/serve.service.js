@@ -38,7 +38,7 @@ export default class siteService {
                 collection,
                 indexName: process.env.SERVICE_INDEX_NAME,
                 textKey: process.env.SERVICE_TEXT_KEY,
-                embeddingKey: process.env.EMBEDDING_KEY,
+                embeddingKey: process.env.SERVICE_EMBEDDING_KEY,
             }
         );
         return true;
@@ -47,16 +47,14 @@ export default class siteService {
     updateService = async () => {
         let response = {};
         response.traceCode = this.traceCode();
-        let message = "Data saved successfully !!";
+        response.message = "Data saved successfully !!";
 
         const vectorStore = await this.storeInVectorDB();
         if (!vectorStore) {
-            message = "Something went wrong when store data in vector db";
-            response.message = message;
+            response.message = "Something went wrong when store data in vector db";
             return response;
         }
 
-        response.message = message;
         return response;
     }
 }

@@ -1,12 +1,15 @@
 import fs from "fs";
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
 import crypto from "crypto";
-import util from "util";
-import path from "path";
 import { v4 as uuid } from "uuid";
 import { MongoClient } from "mongodb";
-import { pipeline } from "stream";
-const pump = util.promisify(pipeline);
-import { PDFLoader } from "langchain/document_loaders/fs/pdf";
+import os from 'os';
+import { pipeline } from 'stream';
+import { promisify } from 'util';;
+import path from 'path';
+const pdfParse = require('pdf-parse');
+const pipelineAsync = promisify(pipeline);
 import { OpenAIEmbeddings } from "langchain/embeddings/openai";
 import { MongoDBAtlasVectorSearch } from "langchain/vectorstores/mongodb_atlas";
 const mongo_uri = `mongodb+srv://${process.env.MONGODB_USER}:${encodeURIComponent(process.env.MONGODB_PASS)}@${process.env.MONGODB_HOST}/${process.env.MONGODB_DATABASE}`
@@ -26,8 +29,16 @@ export default class siteService {
         return crypto.randomBytes(16).toString("hex");
     }
 
-    storeInSiteVector = async (uniqueName) => {
-        let siteDataTextString;
+    readPDF = async (fileStream) => {
+        const tempFilePath = path.join(os.tmpdir(), uuid());
+        await pipelineAsync(fileStream, fs.createWriteStream(tempFilePath));
+        const fileData = await fs.promises.readFile(tempFilePath);
+        const data = await pdfParse(fileData);
+        await fs.promises.unlink(tempFilePath);
+        return data.text;
+    }
+
+    storeInSiteVector = async (siteDataText) => {
         const { fields } = this.data || {};
 
         const siteId = fields?.siteId?.value;
@@ -36,20 +47,8 @@ export default class siteService {
         const tags = fields?.tags?.value;
         const categoryId = fields?.categoryId?.value;
 
-        const loader = new PDFLoader(path.resolve('./src/uploads/', uniqueName), {
-            splitPages: false,
-        });
-
-        const siteDataText = await loader.loadAndSplit();
-        if (siteDataText) {
-            siteDataText.forEach((doc) => {
-                doc.metadata['siteId'] = siteId || "";
-            });
-            siteDataTextString = siteDataText.map(doc => JSON.stringify(doc));
-        }
-
         await MongoDBAtlasVectorSearch.fromTexts(
-            [siteDataTextString || ""],
+            [siteDataText || ""],
             [
                 {
                     id: uuid(),
@@ -65,7 +64,7 @@ export default class siteService {
                 collection,
                 indexName: process.env.SITE_INDEX_NAME,
                 textKey: process.env.SITE_TEXT_KEY,
-                embeddingKey: process.env.EMBEDDING_KEY,
+                embeddingKey: process.env.SITE_EMBEDDING_KEY,
             }
         );
 
@@ -75,41 +74,28 @@ export default class siteService {
     updatePDF = async () => {
         let response = {};
         response.traceCode = this.traceCode();
-        let message = "Data saved successfully !!";
+        response.message = "Data saved successfully !!";
 
         if (!this.data || !this.data.file || !this.data.filename) {
-            message = "Something went wrong with uploading your file";
-            response.message = message;
+            response.message = "Something went wrong with uploading your file";
             return response;
         }
 
-        if (!this.data.fields || !this.data.fields.siteId || !this.data.fields.siteId.value) {
-            message = "Site Id is required";
-            response.message = message;
+        if (!this.data.fields || typeof this.data.fields.siteId?.value !== 'string' || !this.data.fields.siteId.value.trim()) {
+            response.message = "Site Id is required and must be a non-empty string";
             return response;
         }
 
-        let uniqueName = `${Date.now()}-${Math.round(Math.random() * 1E9)}${path.extname(this.data?.filename)}`
-        await pump(this.data.file, fs.createWriteStream(path.resolve('./src/uploads/', uniqueName)));
+        const siteDataText = await this.readPDF(this.data.file);
+        const siteDataTextWithoutBlankLines = siteDataText.replace(/^\s*[\r\n]/gm, '');
 
-        const storeData = await this.storeInSiteVector(uniqueName);
+        const storeData = await this.storeInSiteVector(siteDataTextWithoutBlankLines);
         if (!storeData) {
-            message = "Something went wrong when store data in db";
-            response.message = message;
+            response.message = "Something went wrong when store data in db";
             return;
         }
 
         response.data = storeData;
-        response.message = message;
-
-        fs.unlink(path.resolve('./src/uploads/', uniqueName), (err) => {
-            if (err) {
-                console.error(`Error deleting file: ${err}`);
-            } else {
-                console.log('File deleted successfully');
-            }
-        });
-
         return response;
     }
 }

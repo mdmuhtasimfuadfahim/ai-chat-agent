@@ -1,7 +1,7 @@
 import s from "fluent-json-schema";
 
 export default s.object()
-    .prop("siteId", s.string()).required()
+    .prop("siteId", s.string().minLength(1)).required()
     .prop("categoryId", s.string())
     .prop("serviceId", s.string())
     .prop("tags", s.array())
